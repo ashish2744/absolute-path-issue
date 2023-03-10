@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 
 public class AbsolutePathTest {
 
-    public void absolutePath() throws IOException, URISyntaxException {
+    public void absolutePath() {
         ClassLoader classLoader = getClass().getClassLoader();
         URL resource = classLoader.getResource("Test.txt");
         String absolutePath = resource.getPath();
